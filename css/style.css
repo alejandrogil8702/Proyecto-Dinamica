@@ -1,8 +1,6 @@
 /* SELECTOR: ME SERVIA EN CASOS PARTICULARES*/
 
-
 /* CLASS: ME PERMITE APLICARLE UN NOMBRE A AL PADRE Y AUMENTAR ESPECIFICIDAD O AGRUPAR PROPIEDES QUE QUIERO REUTILIZAR*/
-
 
 /*ID: dejarlo para cosas importantes o para enlazar html c/ javascript para que no se haga lio tantos ID*/
 
@@ -14,7 +12,6 @@ body {
     font-family: "poppins", sans-serif;
 }
 
-
 /*-------------------------RESET----------------*/
 
 * {
@@ -25,7 +22,6 @@ body {
 
 /*-------------------HEADER-------------------*/
 
-
 header {
     background-color: #df8c37;
     padding: 20px;
@@ -35,7 +31,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     z-index: 10;
 }
 
@@ -43,9 +38,8 @@ header h1 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
-    font: weight 500px;
+    font-weight: 500;
     text-align: left;
-
 }
 
 header nav ul {
@@ -53,26 +47,21 @@ header nav ul {
     /* flexbox */
     display: flex;
     justify-content: center;
-
 }
 
 header nav ul li {
     margin: 20px;
 }
 
-
 header nav ul li a {
     text-decoration: none;
     color: aliceblue;
-
 }
 
 header nav ul li a:hover {
     color: #254a74;
     font-weight: bold;
 }
-
-
 
 /*-------------------MAIN-------------------*/
 
@@ -96,7 +85,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .introduccion {
@@ -104,9 +92,7 @@ main {
     bottom: 50px;
     padding-left: 20%;
     padding-right: 20%;
-
 }
-
 
 .hero p {
     font-size: 20px;
@@ -146,9 +132,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
 
 .profesionales div {
     width: 150px;
@@ -159,10 +143,7 @@ main {
 .profesionales div img {
     width: 150px;
     height: 150px;
-
 }
-
-
 
 .grid-galeria {
     width: 100%;
@@ -211,9 +192,6 @@ main {
 .foto-6 {
     grid-row: span 2;
 }
-
-
-
 
 .ubicacion {
     width: 100%;
@@ -292,17 +270,16 @@ section iframe {
 }
 
 /*-------------------page contacto-----------------*/
-.contac-page {
+.contact-page {
     height: 100vh;
     background-attachment: scroll;
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
 /*-------------------page profesionales-----------------*/
-
 .section-equipo {
     background-image: url(../img/logo-dinamica-2.png);
     background-position: center bottom;
@@ -347,14 +324,9 @@ footer div a img {
     padding: 20px;
 }
 
-
 .informacion img {
     width: 50%;
-    /* display: flex;
-    justify-content: left;
-    align-items:left; */
 }
-
 
 .informacion img h4 {
     display: flex;
@@ -364,21 +336,9 @@ footer div a img {
 
 #contacto {
     background-image: url(../img/dinámica-Presentación-50.jpg);
-    height: 90vh;
+    height: 86vh;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
-}
-
-.formularios {
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 
 .redes {
@@ -387,87 +347,100 @@ footer div a img {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+/*---------------------------MEDIA QUERY----------------------------*/
 
-
-
-
-/*---------------------------MEDIA QUERIES----------------------------*/
-
-@media screen and (max-width:1120px) {
-
+@media screen and (max-width: 1058px) {
     header {
-        flex-direction: column;
+        background-color: #df8c37;
+        padding: 20px;
+        position: sticky;
+        top: 0%;
+        /* flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
-}
-
-@media screen and (max-width:650px) {
-
-    header {
-        position: static;
-    }
-}
-
-
-@media screen and (max-width:827px) {
 
     header nav ul {
+        list-style: none;
+        /* flexbox */
+        display: flex;
         flex-direction: column;
     }
+
+    .hero {
+        display: none;
+    }
 }
 
-
-@media screen and (max-width:827px) {
-
-    header nav ul {
+@media screen and (max-width: 979px) {
+    .profesionales {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        text-align: center;
+        color: black;
+        /* flexbox */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width:720px) {
-    .hero h2 {
-        font-size: 50px;
+    @media screen and (max-width: 979px) {
+        .grid-galeria {
+            width: 100%;
+            margin: 0;
+            /*---grids---*/
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 500px;
+            row-gap: 15px;
+            column-gap: 0px;
+            padding: 20px;
+        }
     }
 
-    .hero p {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width:950px) {
-    .grid-galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 220px;
-    }
-}
-
-@media screen and (max-width:820px) {
-
-    .grid-galeria {
-        grid-template-columns: 1fr;
-    }
-}
-
-.grid-item {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-@media screen and (max-width:741px) {
-    .grid-galeria {
-        grid-template-columns: 1fr;
+    @media screen and (max-width:1058px) {
+        .section-equipo {
+            width: 100%;
+            color: white;
+            font-size: 25px;
+            flex-direction: column;
+            align-items: center;
+            background-image: none;
+            background-color: #254a74;
+        }
     }
 
-    .grid-item {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
+    @media screen and (max-width:1058px) {
 
-@media screen and (max-width:1120px) {
-    footer {
-        flex-direction: column;
+        .section-servicios {
+            width: 100%;
+            color: white;
+            font-size: 25px;
+            flex-direction: column;
+            align-items: center;
+            background-image: none;
+            background-color: #254a74;
+        }
     }
-}}
+
+
+    @media screen and (max-width:1058px) {
+
+        .section-especialidades {
+            width: 100%;
+            color: white;
+            font-size: 25px;
+            flex-direction: column;
+            align-items: center;
+            background-image: none;
+            background-color: #254a74;
+        }
+    }
