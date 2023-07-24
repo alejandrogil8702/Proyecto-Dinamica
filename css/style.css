@@ -34,6 +34,7 @@ header {
     z-index: 10;
 }
 
+
 header h1 {
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -310,12 +311,10 @@ footer {
     background-attachment: scroll;
     color: white;
     text-align: center;
-    padding-bottom: 4%;
     /* flexbox */
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    flex-direction: column;
 }
 
 footer div a img {
@@ -324,14 +323,12 @@ footer div a img {
     padding: 20px;
 }
 
-.informacion img {
-    width: 50%;
+footer img {
+    width: 20%;
 }
 
-.informacion img h4 {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+.redes {
+    padding-right: 10%;
 }
 
 #contacto {
@@ -442,5 +439,13 @@ footer div a img {
             align-items: center;
             background-image: none;
             background-color: #254a74;
+        }
+    }
+
+    @media screen and (max-width:966px){
+        footer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
