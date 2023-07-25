@@ -163,9 +163,7 @@ main {
     padding: 75px;
 }
 
-.grid-galeria div {
-    background-color: #254a74;
-}
+
 
 .grid-galeria div img {
     width: 100%;
@@ -204,6 +202,10 @@ main {
     text-align: center;
     font-family: "poppins", sans-serif;
     font-size: larger;
+}
+
+main section iframe {
+    height: 42.5vh;
 }
 
 section iframe {
@@ -313,7 +315,7 @@ footer {
     text-align: center;
     /* flexbox */
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -354,98 +356,103 @@ footer img {
         padding: 20px;
         position: sticky;
         top: 0%;
-        /* flexbox */
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 20px;
     }
 
+
     header nav ul {
         list-style: none;
-        /* flexbox */
         display: flex;
         flex-direction: column;
     }
 
+    header nav ul {
+        display: list-item;
+    }
+
     .hero {
         display: none;
+    }
+
+    .position img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1058px) {
+    .section-equipo {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
+    }
+}
+
+@media screen and (max-width:1058px) {
+
+    .section-servicios {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
+    }
+}
+
+
+@media screen and (max-width:1058px) {
+
+    .section-especialidades {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
     }
 }
 
 @media screen and (max-width: 979px) {
     .profesionales {
         width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        margin-bottom: 10%;
+        padding: 5px;
         text-align: center;
         color: black;
-        /* flexbox */
         display: flex;
-        justify-content: space-around;
+        justify-content: baseline;
         align-items: center;
         flex-direction: column;
     }
+}
 
-    @media screen and (max-width: 979px) {
-        .grid-galeria {
-            width: 100%;
-            margin: 0;
-            /*---grids---*/
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: 500px;
-            row-gap: 15px;
-            column-gap: 0px;
-            padding: 20px;
-        }
+@media screen and (max-width: 979px) {
+    .grid-galeria {
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+        grid-auto-rows: 75px;
+        row-gap: 15px;
+        column-gap: 0px;
+        padding: 20px;
+        grid-gap:15px ;
     }
+}
 
-    @media screen and (max-width:1058px) {
-        .section-equipo {
-            width: 100%;
-            color: white;
-            font-size: 25px;
-            flex-direction: column;
-            align-items: center;
-            background-image: none;
-            background-color: #254a74;
-        }
+@media screen and (max-width:966px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    @media screen and (max-width:1058px) {
-
-        .section-servicios {
-            width: 100%;
-            color: white;
-            font-size: 25px;
-            flex-direction: column;
-            align-items: center;
-            background-image: none;
-            background-color: #254a74;
-        }
-    }
-
-
-    @media screen and (max-width:1058px) {
-
-        .section-especialidades {
-            width: 100%;
-            color: white;
-            font-size: 25px;
-            flex-direction: column;
-            align-items: center;
-            background-image: none;
-            background-color: #254a74;
-        }
-    }
-
-    @media screen and (max-width:966px){
-        footer{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+}
