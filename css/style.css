@@ -63,7 +63,7 @@ header nav ul {
 
 header nav ul li {
     text-align: right;
-    padding-inline: 5;
+    padding-inline: 3%;
 }
 
 header nav ul li a {
@@ -88,7 +88,7 @@ main {
 
 .hero {
     width: 100%;
-    height:100vh;
+    height: 100vh;
     background-image: url(../img/dinamica-fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -326,6 +326,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: scroll;
     color: white;
+    border-top: #df8c37 5px solid;
     text-align: center;
     /* flexbox */
     display: flex;
@@ -366,14 +367,14 @@ footer img {
 
 @media screen and (max-width: 1058px) {
     header {
-        background-color:#254a74;
+        background-color: #254a74;
         position: sticky;
         top: 0%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 150px;
-        border-bottom: #254a74 solid 5px;
+        border-bottom: #df8c37 solid 5px;
     }
 
     header h1 {
@@ -394,9 +395,15 @@ footer img {
         align-items: end;
     }
 
-    header nav ul li{
+    header nav ul li {
         width: 100%;
     }
+
+    header nav ul li a:hover {
+        color:#df8c37;
+        font-weight: bold;
+    }
+    
 
 
     .hero {
@@ -473,7 +480,7 @@ footer img {
         row-gap: 15px;
         column-gap: 0px;
         padding: 20px;
-        grid-gap:15px ;
+        grid-gap: 15px;
     }
 }
 
@@ -485,8 +492,6 @@ footer img {
     }
 
     header h1 {
-        font-size:25px;
+        font-size: 25px;
     }
 }
-
-
