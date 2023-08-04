@@ -10,7 +10,9 @@
 
 body {
     font-family: "poppins", sans-serif;
+    overflow-x: hidden;
 }
+
 
 /*-------------------------RESET----------------*/
 
@@ -24,7 +26,6 @@ body {
 
 header {
     background-color: #df8c37;
-    padding: 20px;
     position: sticky;
     top: 0%;
     /* flexbox */
@@ -32,6 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    height: 150px;
 }
 
 
@@ -41,17 +43,27 @@ header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-align: left;
+    padding-left: 20px;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: right;
 }
 
 header nav ul {
     list-style: none;
     /* flexbox */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-right: 2%;
 }
 
 header nav ul li {
-    margin: 20px;
+    text-align: right;
+    padding-inline: 5;
 }
 
 header nav ul li a {
@@ -64,6 +76,8 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+
+
 /*-------------------MAIN-------------------*/
 
 /*-------------------INDEX-------------------*/
@@ -74,7 +88,7 @@ main {
 
 .hero {
     width: 100%;
-    height: calc(100vh - 130px);
+    height:100vh;
     background-image: url(../img/dinamica-fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -352,26 +366,38 @@ footer img {
 
 @media screen and (max-width: 1058px) {
     header {
-        background-color: #df8c37;
-        padding: 20px;
+        background-color:#254a74;
         position: sticky;
         top: 0%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        height: 150px;
+        border-bottom: #254a74 solid 5px;
     }
 
+    header h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        height: 100%;
+
+    }
 
     header nav ul {
+        height: 100%;
         list-style: none;
         display: flex;
         flex-direction: column;
+        align-items: end;
     }
 
-    header nav ul {
-        display: list-item;
+    header nav ul li{
+        width: 100%;
     }
+
 
     .hero {
         display: none;
@@ -436,6 +462,8 @@ footer img {
     }
 }
 
+
+
 @media screen and (max-width: 979px) {
     .grid-galeria {
         width: 100%;
@@ -455,4 +483,10 @@ footer img {
         justify-content: center;
         align-items: center;
     }
+
+    header h1 {
+        font-size:25px;
+    }
 }
+
+
