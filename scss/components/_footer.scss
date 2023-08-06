@@ -1,0 +1,42 @@
+footer {
+    width: 100%;
+    background-color: #254a74;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: white;
+    border-top: #df8c37 5px solid;
+    text-align: center;
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 20%;
+    }
+
+    .informacion {
+        h4 {}
+
+        p {}
+    }
+
+    .redes {
+        padding-right: 10%;
+        margin-top: 20px;
+        /* flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            img {
+                width: 70px;
+                height: 70px;
+                padding: 20px;
+            }
+        }
+    }
+}

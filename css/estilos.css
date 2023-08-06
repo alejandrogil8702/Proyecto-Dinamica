@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+/*-------------------------RESET----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden; }
+
+.boton {
+  text-decoration: none;
+  color: white;
+  background-color: #254a74;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  .boton:hover {
+    color: white;
+    background-color: #51637F;
+    box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
+
+header {
+  background-color: #df8c37;
+  position: sticky;
+  top: 0%;
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  height: 150px; }
+  header h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px; }
+  header nav {
+    width: 80%;
+    display: flex;
+    justify-content: right; }
+    header nav ul {
+      list-style: none;
+      /* flexbox */
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      padding-right: 2%; }
+      header nav ul li {
+        text-align: right;
+        padding-inline: 3%; }
+        header nav ul li a {
+          text-decoration: none;
+          color: aliceblue; }
+          header nav ul li a:hover {
+            color: #254a74;
+            font-weight: bold; }
+
+main {
+  background-color: #df8c37; }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/dinamica-fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .introduccion {
+    position: absolute;
+    bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%; }
+    .hero .introduccion p {
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px; }
+
+.profesionales {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: black;
+  /* flexbox */
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .profesionales div {
+    width: 150px;
+    height: 150px;
+    margin-block: 5%; }
+    .profesionales div img {
+      width: 150px;
+      height: 150px; }
+
+.grid-galeria {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #254a74;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*---grids---*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 75px; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    border: #df8c37 solid 5px;
+    object-fit: cover;
+    box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
+  .grid-galeria .foto-1 {
+    grid-column: span 2;
+    grid-row: span 2; }
+  .grid-galeria .foto-3 {
+    grid-row: span 2; }
+  .grid-galeria .foto-4 {
+    grid-column: span 2; }
+  .grid-galeria .foto-6 {
+    grid-row: span 2; }
+
+footer {
+  width: 100%;
+  background-color: #254a74;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: white;
+  border-top: #df8c37 5px solid;
+  text-align: center;
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer img {
+    width: 20%; }
+  footer .redes {
+    padding-right: 10%;
+    margin-top: 20px;
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .redes a img {
+      width: 70px;
+      height: 70px;
+      padding: 20px; }
