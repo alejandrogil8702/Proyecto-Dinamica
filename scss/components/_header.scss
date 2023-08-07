@@ -1,5 +1,5 @@
 header {
-    background-color: #df8c37;
+    background-color: $color-primario;
     position: sticky;
     top: 0%;
     /* flexbox */
@@ -38,9 +38,10 @@ header {
                 a {
                     text-decoration: none;
                     color: aliceblue;
+                    transition: 0.5s;
 
                     &:hover {
-                        color: #254a74;
+                        color: $color-secundario;
                         font-weight: bold;
                     }
                 }

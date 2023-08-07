@@ -1,6 +1,7 @@
 main {
     background-color: #df8c37;
 }
+
 .hero {
     width: 100%;
     height: 100vh;
@@ -12,9 +13,7 @@ main {
     color: white;
     text-align: center;
     /* flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
 
     .introduccion {
         position: absolute;
@@ -42,9 +41,7 @@ main {
     text-align: center;
     color: black;
     /* flexbox */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center);
 
     div {
         width: 150px;
@@ -92,44 +89,198 @@ main {
         grid-column: span 2;
         grid-row: span 2;
 
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-2 {
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-3 {
         grid-row: span 2;
 
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-4 {
         grid-column: span 2;
 
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-5 {
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-6 {
         grid-row: span 2;
 
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-7 {
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-8 {
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     .foto-9 {
-        img {}
+        img {
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.position {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+
+    a {
+        img {
+            width: 50px;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+//PAGE ESPECIALIDADES//
+
+.section-especialidades {
+    background-image: url(../img/logo-dinamica-2.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 85vh;
+    padding: 100px;
+    color: white;
+    /* flexbox */
+    @include flex(flex, left, center);
+
+    div {
+        h2 {
+            color: #df8c37;
+        }
+
+        p {}
+    }
+}
+
+// PAGE SERVICIOS //
+
+.section-servicios {
+    background-image: url(../img/logo-dinamica-2.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 85vh;
+    padding: 100px;
+    color: white;
+    /* flexbox */
+    @include flex(flex, left, center);
+
+
+    div {
+        h2 {
+            color: #df8c37;
+        }
+
+        p {}
+    }
+}
+
+// PAGE PROFESIONALES //
+
+.section-equipo {
+    background-image: url(../img/logo-dinamica-2.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 85vh;
+    padding: 100px;
+    color: white;
+    /* flexbox */
+    @include flex(flex, left, center);
+
+
+    div {
+        h2 {
+            color: #df8c37;
+        }
+
+        p {}
+    }
+}
+
+//PAGE DONDE ESTAMOS//
+
+main {
+    .mapa {
+        height: 42.5vh;
+
+        iframe {
+            height: 42.5vh;
+            z-index: 3;
+            position: static;
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            border-width: 0px;
+            margin: 0px;
+            left: 0px;
+            top: 0px;
+            touch-action: pan-x pan-y;
+        }
     }
 }

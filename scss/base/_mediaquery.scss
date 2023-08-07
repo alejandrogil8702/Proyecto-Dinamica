@@ -1,0 +1,130 @@
+@media screen and (max-width: 1058px) {
+    header {
+        background-color: #254a74;
+        position: sticky;
+        top: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        border-bottom: #df8c37 solid 5px;
+    }
+
+    header h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        height: 100%;
+
+    }
+
+    header nav ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a:hover {
+        color:#df8c37;
+        font-weight: bold;
+    }
+    
+
+
+    .hero {
+        display: none;
+    }
+
+    .position img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1058px) {
+    .section-equipo {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
+    }
+}
+
+@media screen and (max-width:1058px) {
+
+    .section-servicios {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
+    }
+}
+
+
+@media screen and (max-width:1058px) {
+
+    .section-especialidades {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #254a74;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .profesionales {
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 5px;
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 979px) {
+    .grid-galeria {
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+        grid-auto-rows: 75px;
+        row-gap: 15px;
+        column-gap: 0px;
+        padding: 20px;
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-width:966px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}

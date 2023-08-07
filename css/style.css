@@ -286,6 +286,12 @@ section iframe {
 }
 
 /*-------------------page contacto-----------------*/
+
+.contacto {
+    background-image: url(../img/dinámica-Presentación-50.jpg);
+    height: 86vh;
+}
+
 .contact-page {
     height: 100vh;
     background-attachment: scroll;
@@ -333,17 +339,15 @@ footer {
     align-items: center;
 }
 
-
-footer img {
-    width: 20%;
-}
-
 footer div a img {
     width: 70px;
     height: 70px;
     padding: 20px;
 }
 
+footer img {
+    width: 20%;
+}
 
 .redes {
     padding-right: 10%;

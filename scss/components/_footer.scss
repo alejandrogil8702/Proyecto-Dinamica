@@ -17,11 +17,6 @@ footer {
         width: 20%;
     }
 
-    .informacion {
-        h4 {}
-
-        p {}
-    }
 
     .redes {
         padding-right: 10%;
@@ -30,13 +25,22 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 1s;
 
         a {
             img {
                 width: 70px;
                 height: 70px;
                 padding: 20px;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
+}
+
+.contacto-footer {
+    background-image: url(../img/dinámica-Presentación-50.jpg);
+    height: 86vh;
 }

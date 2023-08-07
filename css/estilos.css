@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 /*-------------------------RESET----------------*/
 * {
@@ -17,7 +18,8 @@ body {
   border-radius: 10px;
   box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 1.5s; }
   .boton:hover {
     color: white;
     background-color: #51637F;
@@ -58,7 +60,8 @@ header {
         padding-inline: 3%; }
         header nav ul li a {
           text-decoration: none;
-          color: aliceblue; }
+          color: aliceblue;
+          transition: 0.5s; }
           header nav ul li a:hover {
             color: #254a74;
             font-weight: bold; }
@@ -137,12 +140,121 @@ main {
   .grid-galeria .foto-1 {
     grid-column: span 2;
     grid-row: span 2; }
+    .grid-galeria .foto-1 img {
+      transition: 1s; }
+      .grid-galeria .foto-1 img:hover {
+        transform: scale(1.1); }
+  .grid-galeria .foto-2 img {
+    transition: 1s; }
+    .grid-galeria .foto-2 img:hover {
+      transform: scale(1.1); }
   .grid-galeria .foto-3 {
     grid-row: span 2; }
+    .grid-galeria .foto-3 img {
+      transition: 1s; }
+      .grid-galeria .foto-3 img:hover {
+        transform: scale(1.1); }
   .grid-galeria .foto-4 {
     grid-column: span 2; }
+    .grid-galeria .foto-4 img {
+      transition: 1s; }
+      .grid-galeria .foto-4 img:hover {
+        transform: scale(1.1); }
+  .grid-galeria .foto-5 img {
+    transition: 1s; }
+    .grid-galeria .foto-5 img:hover {
+      transform: scale(1.1); }
   .grid-galeria .foto-6 {
     grid-row: span 2; }
+    .grid-galeria .foto-6 img {
+      transition: 1s; }
+      .grid-galeria .foto-6 img:hover {
+        transform: scale(1.1); }
+  .grid-galeria .foto-7 img {
+    transition: 1s; }
+    .grid-galeria .foto-7 img:hover {
+      transform: scale(1.1); }
+  .grid-galeria .foto-8 img {
+    transition: 1s; }
+    .grid-galeria .foto-8 img:hover {
+      transform: scale(1.1); }
+  .grid-galeria .foto-9 img {
+    transition: 1s; }
+    .grid-galeria .foto-9 img:hover {
+      transform: scale(1.1); }
+
+.position {
+  position: fixed;
+  bottom: 100px;
+  right: 50px; }
+  .position a img {
+    width: 50px;
+    transition: 1s; }
+    .position a img:hover {
+      transform: scale(1.1); }
+
+.section-especialidades {
+  background-image: url(../img/logo-dinamica-2.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 85vh;
+  padding: 100px;
+  color: white;
+  /* flexbox */
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+  .section-especialidades div h2 {
+    color: #df8c37; }
+
+.section-servicios {
+  background-image: url(../img/logo-dinamica-2.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 85vh;
+  padding: 100px;
+  color: white;
+  /* flexbox */
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+  .section-servicios div h2 {
+    color: #df8c37; }
+
+.section-equipo {
+  background-image: url(../img/logo-dinamica-2.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 85vh;
+  padding: 100px;
+  color: white;
+  /* flexbox */
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+  .section-equipo div h2 {
+    color: #df8c37; }
+
+main .mapa {
+  height: 42.5vh; }
+  main .mapa iframe {
+    height: 42.5vh;
+    z-index: 3;
+    position: static;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y; }
 
 footer {
   width: 100%;
@@ -166,8 +278,107 @@ footer {
     /* flexbox */
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: 1s; }
     footer .redes a img {
       width: 70px;
       height: 70px;
       padding: 20px; }
+      footer .redes a img:hover {
+        transform: scale(1.1); }
+
+.contacto-footer {
+  background-image: url(../img/dinámica-Presentación-50.jpg);
+  height: 86vh; }
+
+@media screen and (max-width: 1058px) {
+  header {
+    background-color: #254a74;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    border-bottom: #df8c37 solid 5px; }
+  header h1 {
+    display: flex;
+    align-items: center; }
+  header nav {
+    height: 100%; }
+  header nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end; }
+  header nav ul li {
+    width: 100%; }
+  header nav ul li a:hover {
+    color: #df8c37;
+    font-weight: bold; }
+  .hero {
+    display: none; }
+  .position img {
+    display: none; } }
+
+@media screen and (max-width: 1058px) {
+  .section-equipo {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    background-color: #254a74; } }
+
+@media screen and (max-width: 1058px) {
+  .section-servicios {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    background-color: #254a74; } }
+
+@media screen and (max-width: 1058px) {
+  .section-especialidades {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    background-color: #254a74; } }
+
+@media screen and (max-width: 979px) {
+  .profesionales {
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column; } }
+
+@media screen and (max-width: 979px) {
+  .grid-galeria {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    grid-auto-rows: 75px;
+    row-gap: 15px;
+    column-gap: 0px;
+    padding: 20px;
+    grid-gap: 15px; } }
+
+@media screen and (max-width: 966px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  header h1 {
+    font-size: 25px; } }
