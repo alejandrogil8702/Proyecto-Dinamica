@@ -37,7 +37,7 @@ header {
   align-items: center;
   z-index: 10;
   height: 150px; }
-  header h1 {
+  header .animate__bounce {
     color: white;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
