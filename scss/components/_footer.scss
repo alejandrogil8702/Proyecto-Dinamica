@@ -17,6 +17,16 @@ footer {
         width: 20%;
     }
 
+    .informacion{
+        text-align: center;
+        h2{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
 
     .redes {
         padding-right: 10%;
@@ -25,8 +35,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1s;
-
+        transition: 1.5s;
         a {
             img {
                 width: 70px;
@@ -41,6 +50,15 @@ footer {
 }
 
 .contacto-footer {
-    background-image: url(../img/dinámica-Presentación-50.jpg);
-    height: 86vh;
+background-color: #254a74;
+    height: 370px;
+    padding-right: 10%;
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+
 }
+
+

@@ -27,44 +27,18 @@ body {
     -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
 
-header {
-  background-color: #df8c37;
-  position: sticky;
-  top: 0%;
-  /* flexbox */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  height: 150px; }
-  header .animate__bounce {
+header nav {
+  background-color: #df8c37; }
+  header nav h1 {
     color: white;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    text-align: left;
-    padding-left: 20px; }
-  header nav {
-    width: 80%;
-    display: flex;
-    justify-content: right; }
-    header nav ul {
-      list-style: none;
-      /* flexbox */
-      display: flex;
-      justify-content: space-between;
-      width: 80%;
-      padding-right: 2%; }
-      header nav ul li {
-        text-align: right;
-        padding-inline: 3%; }
-        header nav ul li a {
-          text-decoration: none;
-          color: aliceblue;
-          transition: 0.5s; }
-          header nav ul li a:hover {
-            color: #254a74;
-            font-weight: bold; }
+    padding: 10px;
+    font-size: 170%; }
+  header nav div div ul {
+    color: white; }
+    header nav div div ul li a {
+      transition: 0.5s; }
+      header nav div div ul li a:hover {
+        color: #254a74 !important; }
 
 main {
   background-color: #df8c37; }
@@ -256,6 +230,12 @@ main .mapa {
     top: 0px;
     touch-action: pan-x pan-y; }
 
+.formulario {
+  background-image: url(../img/dinámica-Presentación-50.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 footer {
   width: 100%;
   background-color: #254a74;
@@ -272,6 +252,12 @@ footer {
   align-items: center; }
   footer img {
     width: 20%; }
+  footer .informacion {
+    text-align: center; }
+    footer .informacion h2 {
+      font-size: 16px; }
+    footer .informacion h3 {
+      font-size: 16px; }
   footer .redes {
     padding-right: 10%;
     margin-top: 20px;
@@ -279,7 +265,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s; }
+    transition: 1.5s; }
     footer .redes a img {
       width: 70px;
       height: 70px;
@@ -288,39 +274,20 @@ footer {
         transform: scale(1.1); }
 
 .contacto-footer {
-  background-image: url(../img/dinámica-Presentación-50.jpg);
-  height: 86vh; }
+  background-color: #254a74;
+  height: 370px;
+  padding-right: 10%;
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s; }
 
 @media screen and (max-width: 1058px) {
-  header {
-    background-color: #254a74;
-    position: sticky;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    border-bottom: #df8c37 solid 5px; }
-  header h1 {
-    display: flex;
-    align-items: center; }
-  header nav {
-    height: 100%; }
-  header nav ul {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: end; }
-  header nav ul li {
-    width: 100%; }
-  header nav ul li a:hover {
-    color: #df8c37;
-    font-weight: bold; }
   .hero {
     display: none; }
-  .position img {
-    display: none; } }
+    .hero .position a img {
+      display: none; } }
 
 @media screen and (max-width: 1058px) {
   .section-equipo {
@@ -335,6 +302,7 @@ footer {
 @media screen and (max-width: 1058px) {
   .section-servicios {
     width: 100%;
+    height: 115vh;
     color: white;
     font-size: 20px;
     flex-direction: column;
@@ -345,6 +313,7 @@ footer {
 @media screen and (max-width: 1058px) {
   .section-especialidades {
     width: 100%;
+    height: 115vh;
     color: white;
     font-size: 20px;
     flex-direction: column;
@@ -379,6 +348,8 @@ footer {
   footer {
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  header h1 {
-    font-size: 25px; } }
+    align-items: center; } }
+
+@media screen and (max-width: 420px) {
+  .profesionales {
+    font-size: 16px; } }

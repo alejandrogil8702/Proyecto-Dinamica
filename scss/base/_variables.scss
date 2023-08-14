@@ -37,25 +37,4 @@ align-items: $align;
 
 //para llamar al mixin seria .clase + @include flex ( flex, space-around, center) como ejemplo
 
-//*CONDICIONALES 
-// (si esto sucede se ejecuta esto y si no sucede se ejecuta esto. como ejemplo)
-
-//OPERACIONES DE COMPARACION:
-// == SON IGUALES
-// != ES DIFERENTE
-// > MAYOR QUE
-// < MENOR QUE
-// >= MAYOR O IGUAL
-// <= MENOR O IGUAL
-
-//como se aplica?
-
-// if (condicional){
-//     se ejecuta el codigo que esta dentro de las llaves
-// }
-// else{
-//     sino se ejecuta este otro codigo
-// }
-
-
 
