@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 /*-------------------------RESET----------------*/
 * {
@@ -27,9 +26,12 @@ body {
     -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
 
+.colores .form {
+  background-color: rgba(255, 255, 255, 0.607); }
+
 header nav {
   background-color: #df8c37; }
-  header nav h1 {
+  header nav .animate__flash {
     color: white;
     padding: 10px;
     font-size: 170%; }
@@ -178,10 +180,17 @@ main {
   color: white;
   /* flexbox */
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center; }
   .section-especialidades div h2 {
     color: #df8c37; }
+  .section-especialidades div img {
+    width: 250px;
+    border: #df8c37 solid 5px;
+    object-fit: cover;
+    box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
 
 .section-servicios {
   background-image: url(../img/logo-dinamica-2.png);
@@ -194,10 +203,17 @@ main {
   color: white;
   /* flexbox */
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center; }
   .section-servicios div h2 {
     color: #df8c37; }
+  .section-servicios div img {
+    width: 250px;
+    border: #df8c37 solid 5px;
+    object-fit: cover;
+    box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
 
 .section-equipo {
   background-image: url(../img/logo-dinamica-2.png);
@@ -210,31 +226,66 @@ main {
   color: white;
   /* flexbox */
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center; }
   .section-equipo div h2 {
     color: #df8c37; }
+  .section-equipo div img {
+    width: 250px;
+    border: #df8c37 solid 5px;
+    object-fit: cover;
+    box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75); }
 
-main .mapa {
-  height: 42.5vh; }
-  main .mapa iframe {
-    height: 42.5vh;
-    z-index: 3;
-    position: static;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    border-width: 0px;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
-    touch-action: pan-x pan-y; }
+main .mapa iframe {
+  width: 100%;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  touch-action: pan-x pan-y; }
 
-.formulario {
-  background-image: url(../img/dinámica-Presentación-50.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.colores {
+  background-color: #254a74;
+  min-height: 100vh;
+  font-family: inherit;
+  width: 100%;
+  display: flex; }
+  .colores .form {
+    font-family: inherit;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    border: #df8c37 solid 4px;
+    padding: 3.5em 1.5em; }
+    .colores .form .form-container {
+      font-family: inherit;
+      width: 100%;
+      display: grid;
+      gap: 1em;
+      grid-auto-columns: 100%; }
+      .colores .form .form-container .form.title {
+        font-family: inherit;
+        text-align: center;
+        margin-bottom: 4em; }
+      .colores .form .form-container .form-input {
+        font-family: inherit;
+        outline: none;
+        border: none;
+        border: 2px solid #df8c37;
+        border-radius: 0.2em; }
+      .colores .form .form-container .form-cta {
+        font-family: inherit;
+        background-color: #df8c37;
+        color: white;
+        border: none;
+        font-weight: 200px;
+        border-radius: 2em;
+        cursor: pointer;
+        font-weight: 400px; }
 
 footer {
   width: 100%;
@@ -273,53 +324,52 @@ footer {
       footer .redes a img:hover {
         transform: scale(1.1); }
 
-.contacto-footer {
-  background-color: #254a74;
-  height: 370px;
-  padding-right: 10%;
-  /* flexbox */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 1s; }
-
 @media screen and (max-width: 1058px) {
-  .hero {
+  .hero .introduccion p {
     display: none; }
-    .hero .position a img {
-      display: none; } }
+  .hero .introduccion .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 @media screen and (max-width: 1058px) {
   .section-equipo {
     width: 100%;
+    height: 100%;
     color: white;
     font-size: 20px;
     flex-direction: column;
     align-items: center;
     background-image: none;
-    background-color: #254a74; } }
+    background-color: #254a74; }
+    .section-equipo div img {
+      margin-top: 50px; } }
 
 @media screen and (max-width: 1058px) {
   .section-servicios {
     width: 100%;
-    height: 115vh;
+    height: 100%;
     color: white;
     font-size: 20px;
     flex-direction: column;
     align-items: center;
     background-image: none;
-    background-color: #254a74; } }
+    background-color: #254a74; }
+    .section-servicios div img {
+      margin-top: 50px; } }
 
 @media screen and (max-width: 1058px) {
   .section-especialidades {
     width: 100%;
-    height: 115vh;
+    height: 100%;
     color: white;
     font-size: 20px;
     flex-direction: column;
     align-items: center;
     background-image: none;
-    background-color: #254a74; } }
+    background-color: #254a74; }
+    .section-especialidades div img {
+      margin-top: 50px; } }
 
 @media screen and (max-width: 979px) {
   .profesionales {

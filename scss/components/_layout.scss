@@ -214,15 +214,27 @@ main {
     padding: 100px;
     color: white;
     /* flexbox */
-    @include flex(flex, left, center);
+    @include flex(flex, space-between, center);
 
     div {
         h2 {
             color: #df8c37;
         }
 
-        p {}
+
     }
+
+    div {
+        img {
+            width: 250px;
+            border: #df8c37 solid 5px;
+            object-fit: cover;
+            box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+        }
+    }
+
 }
 
 // PAGE SERVICIOS //
@@ -237,7 +249,7 @@ main {
     padding: 100px;
     color: white;
     /* flexbox */
-    @include flex(flex, left, center);
+    @include flex(flex, space-between, center);
 
 
     div {
@@ -245,8 +257,19 @@ main {
             color: #df8c37;
         }
 
-        p {}
     }
+
+    div {
+        img {
+            width: 250px;
+            border: #df8c37 solid 5px;
+            object-fit: cover;
+            box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+        }
+    }
+
 }
 
 // PAGE PROFESIONALES //
@@ -261,31 +284,36 @@ main {
     padding: 100px;
     color: white;
     /* flexbox */
-    @include flex(flex, left, center);
-
+    @include flex(flex, space-between, center);
 
     div {
         h2 {
             color: #df8c37;
         }
 
-        p {
-            
+        p {}
+    }
+
+    div {
+        img {
+            width: 250px;
+            border: #df8c37 solid 5px;
+            object-fit: cover;
+            box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 24px 14px rgba(0, 0, 0, 0.75);
         }
     }
+
 }
 
 //PAGE DONDE ESTAMOS//
 
 main {
     .mapa {
-        height: 42.5vh;
+        // height: 60vh;
 
         iframe {
-            height: 42.5vh;
-            z-index: 3;
-            position: static;
-            height: 100%;
             width: 100%;
             padding: 0px;
             border-width: 0px;
@@ -298,11 +326,55 @@ main {
 }
 
 //PAGE CONTACTO//
-.formulario {
-    background-image: url(../img/dinámica-Presentación-50.jpg);
-    display:flex;
-    justify-content: center;
-    align-items: center;
 
+.colores {
+    background-color:#254a74;
+    min-height: 100vh;
+    font-family: inherit;
+    width: 100%;
+    display: flex;
 
+    .form {
+        font-family: inherit;
+        @extend %background-color;
+        width: 90%;
+        margin: auto;
+        max-width: 400px;
+        border-radius: 1em;
+        border:#df8c37 solid 4px;
+        padding: 3.5em 1.5em;
+
+        .form-container {
+            font-family: inherit;
+            width: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
+
+            .form.title {
+                font-family: inherit;
+                text-align: center;
+                margin-bottom: 4em;
+            }
+
+            .form-input {
+                font-family: inherit;
+                outline: none;
+                border: none;
+                border: 2px solid #df8c37;
+                border-radius: 0.2em;
+            }
+
+            .form-cta {
+                font-family: inherit;
+                background-color:#df8c37;
+                color: white;
+                border: none;
+                font-weight: 200px;
+                border-radius: 2em;
+                cursor: pointer;
+                font-weight: 400px;
+            }
+        }
+    }
 }

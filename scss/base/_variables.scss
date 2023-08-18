@@ -18,13 +18,9 @@ $font-size:
 
 //*EXTENDS
 
-// % = ESTE SIEMBOLO ES EL PLACEHOLDER //
-// para llamar al extends seria .clase + @extend %flex //
-// @extend %flex () {
-//     display:flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+%background-color {
+    background-color: rgba(255, 255, 255, 0.607);
+}
 
 
 //*MIXINS
